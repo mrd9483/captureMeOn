@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Capture Me On basic Usage</title>
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js" type="text/javascript"></script>
+    <script src="jquery.captureMeOn.js" type="text/javascript"></script>
+    
+    <div data-id="1" data-description="basic test">Click 1</div>
+    <div data-id="2" data-anything="works with any of these">Click 2</div>
+    <div data-id="3" data-doge="much events, much happiness!">Click 3</div>
+    
+    <script type="text/javascript">
+        $('div').captureMeOn('click');
+    </script>
+</body>
+
+</html>
