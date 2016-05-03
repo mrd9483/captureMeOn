@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Capture Me On basic Usage</title>
+    <title>Capture Me On Advanced Usage</title>
 </head>
 
 <body>
@@ -23,6 +23,7 @@
     <div data-id="1" data-ignore="this is really bad text" data-description="basic test">Click 1</div>
     <div data-id="2" data-ignore="so is this" data-anything="works with any of these">Click 2</div>
     <div data-id="3" data-ignore="and this" data-doge="much events, much happiness!">Click 3</div>
+    <a href="#inbox">Inbox Yo!</a>
     <div style="margin-top:20px;" id="log">
         <div>Log output here</div>
     </div>
@@ -35,7 +36,7 @@
          $('<div>', {text: $('<span />').text(jsonString).html() }).appendTo('#log');
      	 }    
     
-        $('div').captureMeOn('click', 
+        $('div, a').captureMeOn('click', 
         {
             engine:'custom',
             alwaysInclude: 

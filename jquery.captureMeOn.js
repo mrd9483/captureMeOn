@@ -26,7 +26,7 @@
                 }
             
                 //get href, if applicable
-                if (opts.includesHref && $this.prop('href')) {
+                if (opts.includeHref && $this.prop('href')) {
                     logObj['href'] = $this.prop('href');
                 }
             
