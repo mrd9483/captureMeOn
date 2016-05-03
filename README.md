@@ -7,9 +7,11 @@ Goal: Send JSON to logs that:
 
 **Requires:** jquery
 
-h2. Example usage:
+## Example usage:
 
+```
 $('a').captureMeOn('click', options);
+```
 
 default options:
 
