@@ -18,8 +18,6 @@
         <option>No seriously, the sites are down</option>
     </select>
 
-
-
     <div data-id="1" data-ignore="this is really bad text" data-description="basic test">Click 1</div>
     <div data-id="2" data-ignore="so is this" data-anything="works with any of these">Click 2</div>
     <div data-id="3" data-ignore="and this" data-doge="much events, much happiness!">Click 3</div>
@@ -50,6 +48,9 @@
                 "ignore"
             ]
         });
+        
+        //does not actually bind again
+        $('div, a').captureMeOn('click');
     });
     </script>
 </body>

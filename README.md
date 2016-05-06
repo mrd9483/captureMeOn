@@ -18,7 +18,7 @@ default options:
 ```
 {
     "engine": null, //either null or a function.  Null defaults to console
-    "exclude":["bind"], //exclude all things using data-*, based on list.  data-bind is popular amongst knockout
+    "dataExclude":["bind"], //exclude all things using data-*, based on list.  data-bind is popular amongst knockout
     "alwaysInclude":[], //key/value list of objects to always include.  If it needs to run at runtime, wrap in a function
     "includeHref": true
 }
