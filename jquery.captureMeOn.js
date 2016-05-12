@@ -10,7 +10,7 @@
             
             var executeFunction = function (fnEvent) {
                 for (var key in data) {
-                    if ($.inArray(key, opts.dataExclude) === -1) {
+                    if (key !== "captureMeOn_ran" && $.inArray(key, opts.dataExclude) === -1) {
                         logObj[key] = data[key];
                     }
                 }
